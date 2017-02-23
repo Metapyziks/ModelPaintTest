@@ -63,10 +63,13 @@ Shader "Unlit/ModelPaint"
             
             fixed4 frag (v2f i) : SV_Target
             {
-                float dist = length( i.screenPos.xy - _CursorParams.xy ) * _CursorParams.w - _CursorParams.z;
+                float dist = length( (i.screenPos.xy - _CursorParams.xy) * float2(_CursorParams.w, 1) ) * _CursorParams.z;
                 float alpha = clamp( (1.0 - dist) * i.screenPos.z, 0.0, 1.0 );
 
-                return float4(_Color.rgb, _Color.a * alpha);
+                float2 paintTexUv = i.screenPos.xy * float2(_CursorParams.w, 1) * 4;
+                fixed4 paintTexSample = tex2D( _PaintTexture, paintTexUv );
+
+                return float4(_Color.rgb, _Color.a * alpha) * paintTexSample;
             }
             ENDCG
         }

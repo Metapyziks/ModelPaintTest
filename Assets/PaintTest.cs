@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PaintTest : MonoBehaviour
 {
+    private bool _painting;
+
+    public int Resolution = 1024;
+
     public Camera Camera;
     public MeshRenderer Model;
     public RenderTexture PaintTarget;
     public Material PaintMaterial;
-
-    public float BrushEdge = 16f;
-    public float BrushRadius = 128f;
+    
+    [Range(2f, 128f)]
+    public float BrushRadius = 16f;
 
     public Color BrushColor = Color.white;
 
@@ -18,8 +22,9 @@ public class PaintTest : MonoBehaviour
     {
         if ( PaintTarget == null )
         {
-            PaintTarget = new RenderTexture( 512, 512, 1, RenderTextureFormat.ARGB32 );
+            PaintTarget = new RenderTexture( Resolution, Resolution, 1, RenderTextureFormat.ARGB32 );
 
+            GetComponent<MeshRenderer>().material.mainTexture = PaintTarget;
             Model.material.mainTexture = PaintTarget;
         }
     }
@@ -34,7 +39,7 @@ public class PaintTest : MonoBehaviour
 
         var cursorPos = Camera.ScreenToViewportPoint( Input.mousePosition );
         
-        PaintMaterial.SetVector( "_CursorParams", new Vector4(cursorPos.x, 1f - cursorPos.y, BrushRadius / Camera.pixelHeight, Camera.pixelHeight / BrushEdge) );
+        PaintMaterial.SetVector( "_CursorParams", new Vector4(cursorPos.x, 1f - cursorPos.y, Camera.pixelHeight / BrushRadius, Camera.pixelWidth / (float) Camera.pixelHeight) );
         PaintMaterial.SetColor( "_Color", BrushColor );
         PaintMaterial.SetPass( 0 );
 
@@ -49,8 +54,8 @@ public class PaintTest : MonoBehaviour
         Graphics.SetRenderTarget( null );
     }
 
-    void Update()
+    void FixedUpdate()
     {
-         if (Input.GetMouseButton( 0 )) Paint();
+        if (Input.GetMouseButton( 0 ) || Input.GetKey( KeyCode.Space )) Paint();
     }
 }

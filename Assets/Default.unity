@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 769912952}
   - component: {fileID: 769912951}
   - component: {fileID: 769912950}
+  - component: {fileID: 769912954}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -242,6 +243,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 26.669, y: 19.725, z: 0}
+--- !u!114 &769912954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 769912948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab6efa844087b54cb484bb341bc43a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1962319690
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,14 +284,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59bf867c6a62bb49b05a59888de5d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Resolution: 1024
   Camera: {fileID: 769912949}
   Model: {fileID: 2090028739}
-  UnwrapTarget: {fileID: 0}
   PaintTarget: {fileID: 0}
-  UnwrapMaterial: {fileID: 2100000, guid: 9a736bfff838ceb4bb819b970cefc689, type: 2}
   PaintMaterial: {fileID: 2100000, guid: 0fb1847fd353aea4d88c073228b2d354, type: 2}
-  BrushEdge: 16
-  BrushRadius: 128
+  BrushRadius: 16
   BrushColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!23 &1962319692
 MeshRenderer:
@@ -294,7 +304,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82d2e914a72c2354286f4e65eac281ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -408,7 +418,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2090028738}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.763, y: -0.399, z: 0}
   m_LocalScale: {x: 0.1, y: 0.09999997, z: 0.09999997}
   m_Children: []
   m_Father: {fileID: 0}
