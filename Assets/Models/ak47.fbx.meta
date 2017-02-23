@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: c6d95ff8f9320a44ea5fb255ac999930
+timeCreated: 1487865857
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera
+    100004: Cube
+    100006: Lamp
+    100008: sticker_a
+    100010: sticker_a_end
+    100012: sticker_b
+    100014: sticker_b_end
+    100016: sticker_c
+    100018: sticker_c_end
+    100020: sticker_d
+    100022: sticker_d_end
+    100024: w_rif_ak47_dropped_body0_model0
+    100026: w_rif_ak47_dropped_body0_model0_skeleton
+    100028: weapon_bolt
+    100030: weapon_bolt_end
+    100032: weapon_hand_R
+    100034: weapon_holster_center
+    100036: weapon_holster_center_end
+    100038: weapon_mag
+    100040: weapon_mag_end
+    100042: weapon_magrelease
+    100044: weapon_magrelease_end
+    100046: weapon_trigger
+    100048: weapon_trigger_end
+    400000: //RootNode
+    400002: Camera
+    400004: Cube
+    400006: Lamp
+    400008: sticker_a
+    400010: sticker_a_end
+    400012: sticker_b
+    400014: sticker_b_end
+    400016: sticker_c
+    400018: sticker_c_end
+    400020: sticker_d
+    400022: sticker_d_end
+    400024: w_rif_ak47_dropped_body0_model0
+    400026: w_rif_ak47_dropped_body0_model0_skeleton
+    400028: weapon_bolt
+    400030: weapon_bolt_end
+    400032: weapon_hand_R
+    400034: weapon_holster_center
+    400036: weapon_holster_center_end
+    400038: weapon_mag
+    400040: weapon_mag_end
+    400042: weapon_magrelease
+    400044: weapon_magrelease_end
+    400046: weapon_trigger
+    400048: weapon_trigger_end
+    2300000: Cube
+    3300000: Cube
+    4300000: w_rif_ak47_dropped_body0_model0
+    4300002: Cube
+    9500000: //RootNode
+    13700000: w_rif_ak47_dropped_body0_model0
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
